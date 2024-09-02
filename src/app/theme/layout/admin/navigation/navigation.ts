@@ -20,81 +20,81 @@ export interface NavigationItem {
 
 export const NavigationItems: NavigationItem[] = [
   {
-    id: 'สอบถามข้อมูลต่างๆ',
-    title: 'สอบถามข้อมูลต่างๆ',
+    id: 'สอบถามข้อมูล',
+    title: 'สอบถามข้อมูล',
     type: 'group',
     icon: 'icon-group',
     children: [
       {
-        id: 'สอบถาม',
-        title: 'สอบถาม',
+        id: 'สอบถามรายละเอียด',
+        title: 'สอบถามรายละเอียด',
         type: 'item',
         url: '/analytics',
         icon: 'feather icon-home'
       }
     ]
   },
+  // {
+  //   id: 'ui-component',
+  //   title: 'Ui Component',
+  //   type: 'group',
+  //   icon: 'icon-group',
+  //   children: [
+  //     {
+  //       id: 'basic',
+  //       title: 'Component',
+  //       type: 'collapse',
+  //       icon: 'feather icon-box',
+  //       children: [
+  //         {
+  //           id: 'button',
+  //           title: 'Button',
+  //           type: 'item',
+  //           url: '/component/button'
+  //         },
+  //         {
+  //           id: 'badges',
+  //           title: 'Badges',
+  //           type: 'item',
+  //           url: '/component/badges'
+  //         },
+  //         {
+  //           id: 'breadcrumb-pagination',
+  //           title: 'Breadcrumb & Pagination',
+  //           type: 'item',
+  //           url: '/component/breadcrumb-paging'
+  //         },
+  //         {
+  //           id: 'collapse',
+  //           title: 'Collapse',
+  //           type: 'item',
+  //           url: '/component/collapse'
+  //         },
+  //         {
+  //           id: 'tabs-pills',
+  //           title: 'Tabs & Pills',
+  //           type: 'item',
+  //           url: '/component/tabs-pills'
+  //         },
+  //         {
+  //           id: 'typography',
+  //           title: 'Typography',
+  //           type: 'item',
+  //           url: '/component/typography'
+  //         }
+  //       ]
+  //     }
+  //   ]
+  // },
   {
-    id: 'ui-component',
-    title: 'Ui Component',
+    id: 'หนี้และภาษี',
+    title: 'หนี้และภาษี',
     type: 'group',
     icon: 'icon-group',
     children: [
       {
-        id: 'basic',
-        title: 'Component',
-        type: 'collapse',
-        icon: 'feather icon-box',
-        children: [
-          {
-            id: 'button',
-            title: 'Button',
-            type: 'item',
-            url: '/component/button'
-          },
-          {
-            id: 'badges',
-            title: 'Badges',
-            type: 'item',
-            url: '/component/badges'
-          },
-          {
-            id: 'breadcrumb-pagination',
-            title: 'Breadcrumb & Pagination',
-            type: 'item',
-            url: '/component/breadcrumb-paging'
-          },
-          {
-            id: 'collapse',
-            title: 'Collapse',
-            type: 'item',
-            url: '/component/collapse'
-          },
-          {
-            id: 'tabs-pills',
-            title: 'Tabs & Pills',
-            type: 'item',
-            url: '/component/tabs-pills'
-          },
-          {
-            id: 'typography',
-            title: 'Typography',
-            type: 'item',
-            url: '/component/typography'
-          }
-        ]
-      }
-    ]
-  },
-  {
-    id: 'Authentication',
-    title: 'Authentication',
-    type: 'group',
-    icon: 'icon-group',
-    children: [
-      {
-        id: 'signup',
-        title: 'Sign up',
+        id: 'ลูกหนี้',
+        title: 'ลูกหนี้',
         type: 'item',
         url: '/auth/signup',
         icon: 'feather icon-at-sign',
@@ -102,8 +102,17 @@ export const NavigationItems: NavigationItem[] = [
         breadcrumbs: false
       },
       {
-        id: 'signin',
-        title: 'Sign in',
+        id: 'เจ้าหนี้',
+        title: 'เจ้าหนี้',
+        type: 'item',
+        url: '/auth/signin',
+        icon: 'feather icon-log-in',
+        target: true,
+        breadcrumbs: false
+      },
+      {
+        id: 'หักภาษี ณ ที่จ่าย',
+        title: 'หักภาษี ณ ที่จ่าย',
         type: 'item',
         url: '/auth/signin',
         icon: 'feather icon-log-in',
@@ -113,14 +122,14 @@ export const NavigationItems: NavigationItem[] = [
     ]
   },
   {
-    id: 'chart',
-    title: 'Chart',
+    id: 'รายงาน',
+    title: 'รายงาน',
     type: 'group',
     icon: 'icon-group',
     children: [
       {
-        id: 'apexchart',
-        title: 'ApexChart',
+        id: 'รายงานสรุปผล',
+        title: 'รายงานสรุปผล',
         type: 'item',
         url: '/chart',
         classes: 'nav-item',
@@ -129,22 +138,30 @@ export const NavigationItems: NavigationItem[] = [
     ]
   },
   {
-    id: 'forms & tables',
-    title: 'Forms & Tables',
+    id: 'การขายและการจัดซื้อ',
+    title: 'การขายและการจัดซื้อ',
     type: 'group',
     icon: 'icon-group',
     children: [
       {
-        id: 'forms',
-        title: 'Basic Forms',
+        id: 'ขายปลีก',
+        title: 'ขายปลีก',
         type: 'item',
         url: '/forms',
         classes: 'nav-item',
         icon: 'feather icon-file-text'
       },
       {
-        id: 'tables',
-        title: 'tables',
+        id: 'จัดซื้อและสต็อกสินค้า',
+        title: 'จัดซื้อและสต็อกสินค้า',
+        type: 'item',
+        url: '/tables',
+        classes: 'nav-item',
+        icon: 'feather icon-server'
+      },
+      {
+        id: 'ค่าใช้จ่าย/วัสดุสิ้นเปลือง',
+        title: 'ค่าใช้จ่าย/วัสดุสิ้นเปลือง',
         type: 'item',
         url: '/tables',
         classes: 'nav-item',
@@ -153,55 +170,71 @@ export const NavigationItems: NavigationItem[] = [
     ]
   },
   {
-    id: 'other',
-    title: 'Other',
+    id: 'ตารางนัดลูกค้า',
+    title: 'ตารางนัดลูกค้า',
     type: 'group',
     icon: 'icon-group',
     children: [
       {
-        id: 'sample-page',
-        title: 'Sample Page',
+        id: 'การนัดหมาย',
+        title: 'การนัดหมาย',
         type: 'item',
-        url: '/sample-page',
+        url: '/forms',
         classes: 'nav-item',
-        icon: 'feather icon-sidebar'
+        icon: 'feather icon-file-text'
       },
-      {
-        id: 'menu-level',
-        title: 'Menu Levels',
-        type: 'collapse',
-        icon: 'feather icon-menu',
-        children: [
-          {
-            id: 'menu-level-2.1',
-            title: 'Menu Level 2.1',
-            type: 'item',
-            url: 'javascript:',
-            external: true
-          },
-          {
-            id: 'menu-level-2.2',
-            title: 'Menu Level 2.2',
-            type: 'collapse',
-            children: [
-              {
-                id: 'menu-level-2.2.1',
-                title: 'Menu Level 2.2.1',
-                type: 'item',
-                url: 'javascript:',
-                external: true
-              },
-              {
-                id: 'menu-level-2.2.2',
-                title: 'Menu Level 2.2.2',
-                type: 'item',
-                url: 'javascript:',
-                external: true
-              }
-            ]
-          }
-        ]
-      }
     ]
-  }
+  },
+  // {
+  //   id: 'other',
+  //   title: 'Other',
+  //   type: 'group',
+  //   icon: 'icon-group',
+  //   children: [
+  //     {
+  //       id: 'sample-page',
+  //       title: 'Sample Page',
+  //       type: 'item',
+  //       url: '/sample-page',
+  //       classes: 'nav-item',
+  //       icon: 'feather icon-sidebar'
+  //     },
+  //     {
+  //       id: 'menu-level',
+  //       title: 'Menu Levels',
+  //       type: 'collapse',
+  //       icon: 'feather icon-menu',
+  //       children: [
+  //         {
+  //           id: 'menu-level-2.1',
+  //           title: 'Menu Level 2.1',
+  //           type: 'item',
+  //           url: 'javascript:',
+  //           external: true
+  //         },
+  //         {
+  //           id: 'menu-level-2.2',
+  //           title: 'Menu Level 2.2',
+  //           type: 'collapse',
+  //           children: [
+  //             {
+  //               id: 'menu-level-2.2.1',
+  //               title: 'Menu Level 2.2.1',
+  //               type: 'item',
+  //               url: 'javascript:',
+  //               external: true
+  //             },
+  //             {
+  //               id: 'menu-level-2.2.2',
+  //               title: 'Menu Level 2.2.2',
+  //               type: 'item',
+  //               url: 'javascript:',
+  //               external: true
+  //             }
+  //           ]
+  //         }
+  //       ]
+  //     }
+  //   ]
+  // }
 ];
