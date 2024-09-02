@@ -20,14 +20,14 @@ export interface NavigationItem {
 
 export const NavigationItems: NavigationItem[] = [
   {
-    id: 'navigation',
-    title: 'Navigation',
+    id: 'สอบถามข้อมูลต่างๆ',
+    title: 'สอบถามข้อมูลต่างๆ',
     type: 'group',
     icon: 'icon-group',
     children: [
       {
-        id: 'dashboard',
-        title: 'Dashboard',
+        id: 'สอบถาม',
+        title: 'สอบถาม',
         type: 'item',
         url: '/analytics',
         icon: 'feather icon-home'
