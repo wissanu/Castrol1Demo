@@ -30,7 +30,7 @@ export const NavigationItems: NavigationItem[] = [
         title: 'สอบถามรายละเอียด',
         type: 'item',
         url: '/analytics',
-        icon: 'feather icon-home'
+        icon: 'feather icon-arrow-right'
       }
     ]
   },
@@ -96,28 +96,25 @@ export const NavigationItems: NavigationItem[] = [
         id: 'ลูกหนี้',
         title: 'ลูกหนี้',
         type: 'item',
-        url: '/auth/signup',
-        icon: 'feather icon-at-sign',
-        target: true,
-        breadcrumbs: false
+        url: '/component/badges',
+        // icon: 'feather icon-at-sign',
+        icon: 'feather icon-arrow-right',
       },
       {
         id: 'เจ้าหนี้',
         title: 'เจ้าหนี้',
         type: 'item',
-        url: '/auth/signin',
-        icon: 'feather icon-log-in',
-        target: true,
-        breadcrumbs: false
+        url: '/component/button',
+        // icon: 'feather icon-log-in',
+        icon: 'feather icon-arrow-right',
       },
       {
         id: 'หักภาษี ณ ที่จ่าย',
         title: 'หักภาษี ณ ที่จ่าย',
         type: 'item',
-        url: '/auth/signin',
-        icon: 'feather icon-log-in',
-        target: true,
-        breadcrumbs: false
+        url: '/component/breadcrumb-paging',
+        // icon: 'feather icon-log-in',
+        icon: 'feather icon-arrow-right',
       }
     ]
   },
@@ -133,7 +130,8 @@ export const NavigationItems: NavigationItem[] = [
         type: 'item',
         url: '/chart',
         classes: 'nav-item',
-        icon: 'feather icon-pie-chart'
+        // icon: 'feather icon-pie-chart'
+        icon: 'feather icon-arrow-right'
       }
     ]
   },
@@ -149,7 +147,8 @@ export const NavigationItems: NavigationItem[] = [
         type: 'item',
         url: '/forms',
         classes: 'nav-item',
-        icon: 'feather icon-file-text'
+        // icon: 'feather icon-file-text'
+        icon: 'feather icon-arrow-right'
       },
       {
         id: 'จัดซื้อและสต็อกสินค้า',
@@ -157,15 +156,17 @@ export const NavigationItems: NavigationItem[] = [
         type: 'item',
         url: '/tables',
         classes: 'nav-item',
-        icon: 'feather icon-server'
+        // icon: 'feather icon-server'
+        icon: 'feather icon-arrow-right'
       },
       {
         id: 'ค่าใช้จ่าย/วัสดุสิ้นเปลือง',
         title: 'ค่าใช้จ่าย/วัสดุสิ้นเปลือง',
         type: 'item',
-        url: '/tables',
+        url: '/component/tabs-pills',
         classes: 'nav-item',
-        icon: 'feather icon-server'
+        // icon: 'feather icon-server'
+        icon: 'feather icon-arrow-right'
       }
     ]
   },
@@ -179,9 +180,10 @@ export const NavigationItems: NavigationItem[] = [
         id: 'การนัดหมาย',
         title: 'การนัดหมาย',
         type: 'item',
-        url: '/forms',
+        url: '/component/collapse',
         classes: 'nav-item',
-        icon: 'feather icon-file-text'
+        // icon: 'feather icon-file-text'
+        icon: 'feather icon-arrow-right'
       },
     ]
   },
