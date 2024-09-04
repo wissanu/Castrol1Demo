@@ -95,18 +95,56 @@ export const NavigationItems: NavigationItem[] = [
       {
         id: 'ลูกหนี้',
         title: 'ลูกหนี้',
-        type: 'item',
-        url: '/component/badges',
+        type: 'collapse',
         // icon: 'feather icon-at-sign',
-        icon: 'feather icon-arrow-right',
+        icon: 'feather icon-box',
+        children: [
+          {
+            id: 'ใบชำระหนี้',
+            title: 'ใบชำระหนี้',
+            type: 'item',
+            url: '/component/badges'
+          },
+          {
+            id: 'ใบลดหนี้ลูกหนี้',
+            title: 'ใบลดหนี้ลูกหนี้',
+            type: 'item',
+            url: '/component/badges'
+          },
+          {
+            id: 'ใบวางบิล',
+            title: 'ใบวางบิล',
+            type: 'item',
+            url: '/component/badges'
+          },
+        ]
       },
       {
         id: 'เจ้าหนี้',
         title: 'เจ้าหนี้',
-        type: 'item',
-        url: '/component/button',
+        type: 'collapse',
         // icon: 'feather icon-log-in',
-        icon: 'feather icon-arrow-right',
+        icon: 'feather icon-box',
+        children: [
+          {
+            id: 'ใบชำระหนี้',
+            title: 'ใบชำระหนี้',
+            type: 'item',
+            url: '/component/button',
+          },
+          {
+            id: 'ใบลดหนี้',
+            title: 'ใบลดหนี้',
+            type: 'item',
+            url: '/component/button',
+          },
+          {
+            id: 'ใบรับวางบิล',
+            title: 'ใบรับวางบิล',
+            type: 'item',
+            url: '/component/button',
+          },
+        ]
       },
       {
         id: 'หักภาษี ณ ที่จ่าย',
