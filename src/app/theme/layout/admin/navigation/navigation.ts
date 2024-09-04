@@ -19,21 +19,6 @@ export interface NavigationItem {
 }
 
 export const NavigationItems: NavigationItem[] = [
-  {
-    id: 'สอบถามข้อมูล',
-    title: 'สอบถามข้อมูล',
-    type: 'group',
-    icon: 'icon-group',
-    children: [
-      {
-        id: 'สอบถามรายละเอียด',
-        title: 'สอบถามรายละเอียด',
-        type: 'item',
-        url: '/analytics',
-        icon: 'feather icon-arrow-right'
-      }
-    ]
-  },
   // {
   //   id: 'ui-component',
   //   title: 'Ui Component',
@@ -97,7 +82,7 @@ export const NavigationItems: NavigationItem[] = [
         title: 'ลูกหนี้',
         type: 'collapse',
         // icon: 'feather icon-at-sign',
-        icon: 'feather icon-box',
+        icon: 'bi bi-grid-3x2-gap-fill',
         children: [
           {
             id: 'ใบชำระหนี้',
@@ -124,7 +109,7 @@ export const NavigationItems: NavigationItem[] = [
         title: 'เจ้าหนี้',
         type: 'collapse',
         // icon: 'feather icon-log-in',
-        icon: 'feather icon-box',
+        icon: 'bi bi-grid-3x2-gap-fill',
         children: [
           {
             id: 'ใบชำระหนี้',
@@ -152,24 +137,7 @@ export const NavigationItems: NavigationItem[] = [
         type: 'item',
         url: '/component/breadcrumb-paging',
         // icon: 'feather icon-log-in',
-        icon: 'feather icon-arrow-right',
-      }
-    ]
-  },
-  {
-    id: 'รายงาน',
-    title: 'รายงาน',
-    type: 'group',
-    icon: 'icon-group',
-    children: [
-      {
-        id: 'รายงานสรุปผล',
-        title: 'รายงานสรุปผล',
-        type: 'item',
-        url: '/chart',
-        classes: 'nav-item',
-        // icon: 'feather icon-pie-chart'
-        icon: 'feather icon-arrow-right'
+        icon: 'bi bi-grid-3x2-gap-fill',
       }
     ]
   },
@@ -186,7 +154,7 @@ export const NavigationItems: NavigationItem[] = [
         url: '/forms',
         classes: 'nav-item',
         // icon: 'feather icon-file-text'
-        icon: 'feather icon-arrow-right'
+        icon: 'bi bi-grid-3x2-gap-fill'
       },
       {
         id: 'จัดซื้อและสต็อกสินค้า',
@@ -195,7 +163,7 @@ export const NavigationItems: NavigationItem[] = [
         url: '/tables',
         classes: 'nav-item',
         // icon: 'feather icon-server'
-        icon: 'feather icon-arrow-right'
+        icon: 'bi bi-grid-3x2-gap-fill'
       },
       {
         id: 'ค่าใช้จ่าย/วัสดุสิ้นเปลือง',
@@ -204,7 +172,7 @@ export const NavigationItems: NavigationItem[] = [
         url: '/component/tabs-pills',
         classes: 'nav-item',
         // icon: 'feather icon-server'
-        icon: 'feather icon-arrow-right'
+        icon: 'bi bi-grid-3x2-gap-fill'
       }
     ]
   },
@@ -221,10 +189,46 @@ export const NavigationItems: NavigationItem[] = [
         url: '/component/collapse',
         classes: 'nav-item',
         // icon: 'feather icon-file-text'
-        icon: 'feather icon-arrow-right'
+        // icon: 'feather icon-activity'
+        icon: 'bi bi-bookmarks-fill'
       },
     ]
   },
+  {
+    id: 'สอบถามข้อมูล',
+    title: 'สอบถามข้อมูล',
+    type: 'group',
+    icon: 'icon-group',
+    children: [
+      {
+        id: 'สอบถามรายละเอียด',
+        title: 'สอบถามรายละเอียด',
+        type: 'item',
+        url: '/analytics',
+        // icon: 'feather icon-help-circle'
+        icon: 'bi bi-question-square-fill'
+      }
+    ]
+  },
+  {
+    id: 'รายงาน',
+    title: 'รายงาน',
+    type: 'group',
+    icon: 'icon-group',
+    children: [
+      {
+        id: 'รายงานสรุปผล',
+        title: 'รายงานสรุปผล',
+        type: 'item',
+        url: '/chart',
+        classes: 'nav-item',
+        // icon: 'feather icon-pie-chart'
+        icon: 'bi bi-bar-chart-fill'
+        // icon: 'bi bi-grid-3x2-gap-fill'
+      }
+    ]
+  },
+  
   // {
   //   id: 'other',
   //   title: 'Other',
@@ -243,7 +247,7 @@ export const NavigationItems: NavigationItem[] = [
   //       id: 'menu-level',
   //       title: 'Menu Levels',
   //       type: 'collapse',
-  //       icon: 'feather icon-menu',
+  //       icon: 'bi bi-grid-3x2-gap-fill',
   //       children: [
   //         {
   //           id: 'menu-level-2.1',
