@@ -1,0 +1,259 @@
+/* task1 */
+button.alertc,
+.button.alertc {
+  background-color: #f04124;
+  border-color: #ea2f10;
+  color: white;
+}
+button.alertc:hover,
+button.alertc:focus,
+.button.alertc:hover,
+.button.alertc:focus {
+  background-color: #ea2f10;
+}
+button.alertc:hover,
+button.alertc:focus,
+.button.alertc:hover,
+.button.alertc:focus {
+  color: white;
+}
+
+button.add:hover,
+button.add:focus,
+.button.add:hover,
+.button.add:focus {
+  color: #fff;
+  background-color: #1a85ff;
+  border-color: #0d7eff;
+}
+
+button.add,
+.button.add {
+  color: #fff;
+  background-color: #4099ff;
+  border-color: #4099ff;
+  --bs-btn-color: #000;
+  --bs-btn-bg: #4099ff;
+  --bs-btn-border-color: #4099ff;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #5da8ff;
+  --bs-btn-hover-border-color: #53a3ff;
+  --bs-btn-focus-shadow-rgb: 54, 130, 217;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #66adff;
+  --bs-btn-active-border-color: #53a3ff;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #4099ff;
+  --bs-btn-disabled-border-color: #4099ff;
+}
+
+button.save:hover,
+button.save:focus,
+.button.save:hover,
+.button.save:focus {
+  color: #fff;
+  background-color: #3c9a5f;
+  border-color: #24994f;
+}
+
+button.save,
+.button.save {
+  background-color: #43ac6a;
+  border-color: #3c9a5f;
+  color: white;
+}
+button.find:hover,
+button.find:focus,
+.button.find:hover,
+.button.find:focus {
+  color: #fff;
+  background-color: #04b2cd;
+  border-color: #00b1cd;
+}
+
+button.find,
+.button.find {
+  background-color: #00bcd4;
+  border-color: #00b4cc;
+  color: white;
+}
+
+button.reset:hover,
+button.reset:focus,
+.button.reset:hover,
+.button.reset:focus {
+  color: #fff;
+  background-color: #ffaf4d;
+  border-color: #fca43a;
+}
+
+button.reset,
+.button.reset {
+  background-color: #ffb64d;
+  border-color: #ffad3a;
+  color: white;
+}
+
+button.cancel:hover,
+button.cancel:focus,
+.button.cancel:hover,
+.button.cancel:focus {
+  color: #fff;
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+button.cancel,
+.button.cancel {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #6c757d;
+  --bs-btn-border-color: #6c757d;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #5c636a;
+  --bs-btn-hover-border-color: #565e64;
+  --bs-btn-focus-shadow-rgb: 130, 138, 145;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #565e64;
+  --bs-btn-active-border-color: #51585e;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #6c757d;
+  --bs-btn-disabled-border-color: #6c757d;
+}
+
+button.previous:hover,
+button.previous:focus,
+.button.previous:hover,
+.button.previous:focus {
+  color: #fff;
+  background-color: #8e8d8d;
+  border-color: #918989;
+}
+
+button.previous,
+.button.previous {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #aaa9a9;
+  --bs-btn-border-color: #aaa9a9;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #5c636a;
+  --bs-btn-hover-border-color: #565e64;
+  --bs-btn-focus-shadow-rgb: 130, 138, 145;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #565e64;
+  --bs-btn-active-border-color: #51585e;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #6c757d;
+  --bs-btn-disabled-border-color: #6c757d;
+}
+/* The CSS for Icons Label */
+.btn-labeled {
+  padding-top: 0;
+  padding-bottom: 1px;
+}
+.btn-label {
+  position: relative;
+  left: -16px;
+  display: inline-block;
+  padding-top: 0.4rem;
+  padding-right: 0.8rem;
+  padding-bottom: 0.4rem;
+  padding-left: 0.8rem;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 3px 0 0 3px;
+}
+.btn-label.btn-label-right {
+  right: -15px;
+  left: auto;
+  border-radius: 0 3px 3px 0;
+}
+.xsm {
+  font-size: 0.7125rem;
+  padding-right: 0.45rem;
+  padding-left: 0.45rem;
+}
+.xsm .btn-label {
+  left: -7px;
+  border-radius: 2px 0 0 2px;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3375rem;
+  padding-right: 0.45rem;
+  padding-left: 0.45rem;
+}
+.xsm .btn-label.btn-label-right {
+  right: -7px;
+  left: auto;
+  border-radius: 0 2px 2px 0;
+}
+.sm {
+  font-size: 0.8325rem;
+  padding-right: 0.65rem;
+  padding-left: 0.65rem;
+}
+.sm .btn-label {
+  left: -10px;
+  border-radius: 2px 0 0 2px;
+  padding-top: 0.39rem;
+  padding-right: 0.45rem;
+  padding-bottom: 0.41rem;
+  padding-left: 0.45rem;
+}
+.sm .btn-label.btn-label-right {
+  right: -10px;
+  left: auto;
+  border-radius: 0 2px 2px 0;
+}
+.lg {
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+  font-size: 1rem;
+}
+.lg .btn-label {
+  left: -19px;
+  padding-top: 0.65rem;
+  padding-right: 1rem;
+  padding-bottom: 0.67rem;
+  padding-left: 1rem;
+}
+.lg .btn-label.btn-label-right {
+  right: -19px;
+  left: auto;
+  border-radius: 0 2px 2px 0;
+}
+
+/* Same as in foundation */
+button.radius,
+.button.radius {
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* task2 */
+
+.btn-form-icon {
+  position: relative;
+  display: flex;
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+.border-triangle-end {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.border-triangle-start {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-icon-prop {
+  height: 35px;
+  color: white;
+  background: #4099ff;
+  font-size: x-large;
+}

@@ -1,5 +1,104 @@
 <div class="row">
   <div class="col-sm-12">
+    <app-card cardTitle="PLOY Tasks" [options]="false">
+      <h5>Ploy Task 1 (BUTTON)</h5>
+      <hr />
+      <div class="row">
+        <div class="col-md-12">
+          <div class="input-group mb-3 gap-3">
+            <!-- <input type="text" class="form-control" aria-label="Text input with segmented dropdown button" /> -->
+            <button type="button" class="btn-labeled btn find m-0 rounded-3">
+              <span class="btn-label"><i class="bi bi-search"></i></span>
+              ค้นหา
+            </button>
+
+            <button type="button" class="btn-labeled btn save m-0 rounded-3">
+              <span class="btn-label"><i class="bi bi-bag-check-fill"></i></span>
+              บันทึก
+            </button>
+
+            <button type="button" class="btn-labeled btn reset m-0 rounded-3">
+              <span class="btn-label"><i class="bi bi-arrow-repeat"></i></span>
+              ค่าเริ่มต้น
+            </button>
+
+            <button type="button" class="btn-labeled btn add m-0 rounded-3">
+              <span class="btn-label"><i class="bi bi-floppy-fill"></i></span>
+              เพิ่ม
+            </button>
+
+            <button type="button" class="btn-labeled btn cancel m-0 rounded-3">
+              <span class="btn-label"><i class="bi bi-x-lg"></i></span>
+              ยกเลิก
+            </button>
+
+            <button type="button" class="btn-labeled btn previous m-0 rounded-3">
+              <span class="btn-label"><i class="bi bi-arrow-counterclockwise"></i></span>
+              ย้อนกลับ
+            </button>
+
+            <button type="button" class="btn-labeled btn alertc m-0 rounded-3">
+              <span class="btn-label"><i class="bi bi-trash-fill"></i></span>
+              ลบ
+            </button>
+          </div>
+        </div>
+      </div>
+      <h5 class="mt-5">Ploy Task 2</h5>
+      <hr />
+      <div class="row">
+        <div class="col-md-3">
+          <div class="input-group mb-3">
+            <button class="btn-form-icon">
+              <input
+                type="text"
+                class="form-control pe-none border-triangle-end"
+                placeholder="Recipient's username"
+                aria-label="Recipient's username"
+                aria-describedby="basic-addon2"
+              />
+              <span class="input-group-text border-triangle-start form-icon-prop" id="basic-addon2">
+                <i class="bi bi-car-front-fill"></i>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="input-group mb-3">
+            <button class="btn-form-icon">
+              <input
+                type="text"
+                class="form-control pe-none border-triangle-end"
+                placeholder="Recipient's username"
+                aria-label="Recipient's username"
+                aria-describedby="basic-addon2"
+              />
+              <span class="input-group-text border-triangle-start form-icon-prop" id="basic-addon2">
+                <i class="bi bi-car-front-fill"></i>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="input-group mb-3">
+            <button class="btn-form-icon">
+              <input
+                type="text"
+                class="form-control pe-none border-triangle-end"
+                placeholder="Recipient's username"
+                aria-label="Recipient's username"
+                aria-describedby="basic-addon2"
+              />
+              <span class="input-group-text border-triangle-start form-icon-prop" id="basic-addon2">
+                <i class="bi bi-car-front-fill"></i>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </app-card>
+  </div>
+  <div class="col-sm-12">
     <app-card cardTitle="Basic Component" [options]="false">
       <h5>Form controls</h5>
       <hr />
@@ -637,6 +736,19 @@
             <input type="text" class="form-control" aria-label="Text input with dropdown button" />
           </div>
           <div class="input-group mb-3">
+            <div class="input-group-prepend" ngbDropdown placement="bottom-start">
+              <button class="btn btn-primary one-dropdown" ngbDropdownToggle type="button">Dropdown</button>
+              <div ngbDropdownMenu>
+                <a class="dropdown-item" href="javascript:">Action</a>
+                <a class="dropdown-item" href="javascript:">Another action</a>
+                <a class="dropdown-item" href="javascript:">Something else here</a>
+                <div role="separator" class="dropdown-divider"></div>
+                <a class="dropdown-item" href="javascript:">Separated link</a>
+              </div>
+            </div>
+            <input type="text" class="form-control" aria-label="Text input with dropdown button" />
+          </div>
+          <div class="input-group mb-3">
             <input type="text" class="form-control" aria-label="Text input with dropdown button" />
             <div class="input-group-append" ngbDropdown [placement]="'bottom-left'">
               <button class="btn btn-primary one-dropdown" ngbDropdownToggle type="button">Dropdown</button>
@@ -680,6 +792,32 @@
               <div role="separator" class="dropdown-divider"></div>
               <a class="dropdown-item" href="javascript:">Separated link</a>
             </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <h5 class="mt-5">Ploy Task 1 (BUTTON)</h5>
+          <hr />
+          <div class="input-group mb-3">
+            <!-- <input type="text" class="form-control" aria-label="Text input with segmented dropdown button" /> -->
+            <!-- <button type="button" class="lg btn-labeled radius">
+              <span class="btn-label"><i class="bi bi-bag-check-fill"></i></span>
+              XSmall
+            </button>
+
+            <button type="button" class="lg btn-labeled radius warning">
+              <span class="btn-label"><i class="bi bi-bag-check-fill"></i></span>
+              Small
+            </button> -->
+
+            <button type="button" class="btn-labeled btn cancel m-0 rounded-3">
+              <span class="btn-label"><i class="bi bi-x-lg"></i></span>
+              ยกเลิก
+            </button>
+
+            <button type="button" class="btn-labeled btn alertc m-0 rounded-3">
+              <span class="btn-label"><i class="bi bi-trash-fill"></i></span>
+              ลบข้อมูล
+            </button>
           </div>
         </div>
       </div>
