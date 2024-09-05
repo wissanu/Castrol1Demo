@@ -228,6 +228,54 @@ export const NavigationItems: NavigationItem[] = [
       }
     ]
   },
+  {
+    id: 'ข้อมูลตั้งค่าระบบ',
+    title: 'ข้อมูลตั้งค่าระบบ',
+    type: 'group',
+    icon: 'icon-group',
+    children: [
+      {
+        id: 'ข้อมูลบริษัท',
+        title: 'ข้อมูลบริษัท',
+        type: 'item',
+        url: '/chart',
+        classes: 'nav-item',
+        // icon: 'feather icon-pie-chart'
+        icon: 'bi bi-file-earmark-text-fill'
+        // icon: 'bi bi-grid-3x2-gap-fill'
+      },
+      {
+        id: 'ข้อมูลรถยนต์',
+        title: 'ข้อมูลรถยนต์',
+        type: 'item',
+        url: '/chart',
+        classes: 'nav-item',
+        // icon: 'feather icon-pie-chart'
+        icon: 'bi bi-file-medical-fill'
+        // icon: 'bi bi-grid-3x2-gap-fill'
+      },
+      {
+        id: 'ข้อมูลอะไหล่',
+        title: 'ข้อมูลอะไหล่',
+        type: 'item',
+        url: '/chart',
+        classes: 'nav-item',
+        // icon: 'feather icon-pie-chart'
+        icon: 'bi bi-file-richtext-fill'
+        // icon: 'bi bi-grid-3x2-gap-fill'
+      },
+      {
+        id: 'ข้อมูลลูกค้า',
+        title: 'ข้อมูลลูกค้า',
+        type: 'item',
+        url: '/chart',
+        classes: 'nav-item',
+        // icon: 'feather icon-pie-chart'
+        icon: 'bi bi-file-spreadsheet-fill'
+        // icon: 'bi bi-grid-3x2-gap-fill'
+      },
+    ]
+  },
   
   // {
   //   id: 'other',
