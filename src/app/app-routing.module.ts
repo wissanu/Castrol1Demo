@@ -25,6 +25,10 @@ const routes: Routes = [
         loadChildren: () => import('./demo/ui-element/ui-basic.module').then((m) => m.UiBasicModule)
       },
       {
+        path: 'settingdata',
+        loadChildren: () => import('./demo/setting-data/setting-data.module').then((m) => m.SettingDataModule)
+      },
+      {
         path: 'chart',
         loadComponent: () => import('./demo/chart & map/core-apex.component')
       },

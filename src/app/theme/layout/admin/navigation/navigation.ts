@@ -238,7 +238,7 @@ export const NavigationItems: NavigationItem[] = [
         id: 'ข้อมูลบริษัท',
         title: 'ข้อมูลบริษัท',
         type: 'item',
-        url: '/chart',
+        url: '/settingdata/company',
         classes: 'nav-item',
         // icon: 'feather icon-pie-chart'
         icon: 'bi bi-file-earmark-text-fill'
@@ -248,7 +248,7 @@ export const NavigationItems: NavigationItem[] = [
         id: 'ข้อมูลรถยนต์',
         title: 'ข้อมูลรถยนต์',
         type: 'item',
-        url: '/chart',
+        url: '/settingdata/car',
         classes: 'nav-item',
         // icon: 'feather icon-pie-chart'
         icon: 'bi bi-file-medical-fill'
@@ -258,7 +258,7 @@ export const NavigationItems: NavigationItem[] = [
         id: 'ข้อมูลอะไหล่',
         title: 'ข้อมูลอะไหล่',
         type: 'item',
-        url: '/chart',
+        url: '/settingdata/parts',
         classes: 'nav-item',
         // icon: 'feather icon-pie-chart'
         icon: 'bi bi-file-richtext-fill'
@@ -268,7 +268,7 @@ export const NavigationItems: NavigationItem[] = [
         id: 'ข้อมูลลูกค้า',
         title: 'ข้อมูลลูกค้า',
         type: 'item',
-        url: '/chart',
+        url: '/settingdata/customer',
         classes: 'nav-item',
         // icon: 'feather icon-pie-chart'
         icon: 'bi bi-file-spreadsheet-fill'
