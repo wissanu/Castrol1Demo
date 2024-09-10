@@ -1,1 +1,118 @@
-<p>company works!</p>
+<div class="row btn-page">
+    <div class="col-sm-12">
+      <app-card cardTitle="สร้างข้อมูลบริษัท" [options]="false" blockClass="pt-0" cardTitleStyle="header-title-green header-title-larger header-with-button" [headerButton]="true">
+        <div class="row pb-5">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label for="compId" class="d-flex">รหัสบริษัท<p style="color: red; padding: 0 5px; margin-bottom: 0px;">*</p></label>
+                    <input type="text" class="form-control" id="compId" aria-describedby="compId" placeholder="กรอกรหัสที่จดทะเบียน บริษัท หรือ ห้างร้าน" />
+                    <small id="compId" class="form-text text-muted">* กรอกรหัสที่จดทะเบียน บริษัท หรือ ห้างร้าน</small>
+                  </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="compName" class="d-flex">ชื่อบริษัท<p style="color: red; padding: 0 5px; margin-bottom: 0px;">*</p></label>
+                    <input type="text" class="form-control" id="compName" aria-describedby="compName" placeholder="ชื่อบรัทษัท หรือ ห้างร้าน" />
+                    <small id="compName" class="form-text text-muted">* ชื่อบรัทษัท หรือ ห้างร้าน</small>
+                  </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="compaddr" class="d-flex">ที่อยู่บริษัท<p style="color: red; padding: 0 5px; margin-bottom: 0px;">*</p></label>
+                    <input type="text" class="form-control" id="compaddr" aria-describedby="compaddr" placeholder="ที่อยู่ หรือ สถานที่จัดตั้งสถานประกอบการ" />
+                    <small id="compaddr" class="form-text text-muted">* ที่อยู่ หรือ สถานที่จัดตั้งสถานประกอบการ</small>
+                  </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="compNameEng" class="d-flex">ชื่อบริษัท ENG.<p style="color: red; padding: 0 5px; margin-bottom: 0px;">*</p></label>
+                    <input type="text" class="form-control" id="compNameEng" aria-describedby="compNameEng" placeholder="ชื่อบรัทษัท หรือ ห้างร้าน (ภาษาอังกฤษ)" />
+                    <small id="compNameEng" class="form-text text-muted">* ชื่อบรัทษัท หรือ ห้างร้าน (ภาษาอังกฤษ)</small>
+                  </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="compaddrEng" class="d-flex">ที่อยู่บริษัท ENG.<p style="color: red; padding: 0 5px; margin-bottom: 0px;">*</p></label>
+                    <input type="text" class="form-control" id="compaddrEng" aria-describedby="compaddrEng" placeholder="ที่อยู่ หรือ สถานที่จัดตั้งสถานประกอบการ (ภาษาอังกฤษ)" />
+                    <small id="compaddrEng" class="form-text text-muted">* ที่อยู่ หรือ สถานที่จัดตั้งสถานประกอบการ (ภาษาอังกฤษ)</small>
+                  </div>
+            </div>
+            <div class="col-sm-12">
+                <hr>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="compaddrEng" class="d-flex">แขวง/ตำบล<p style="color: red; padding: 0 5px; margin-bottom: 0px;">*</p></label>
+                    <input type="text" class="form-control" id="compaddrEng" aria-describedby="compaddrEng" placeholder="" />
+            
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="compaddrEng" class="d-flex">อำเภอ<p style="color: red; padding: 0 5px; margin-bottom: 0px;">*</p></label>
+                    <input type="text" class="form-control" id="compaddrEng" aria-describedby="compaddrEng" placeholder="" />
+            
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="compaddrEng" class="d-flex">จังหวัด<p style="color: red; padding: 0 5px; margin-bottom: 0px;">*</p></label>
+                    <input type="text" class="form-control" id="compaddrEng" aria-describedby="compaddrEng" placeholder="" />
+            
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="compaddrEng" class="d-flex">รหัสไปรษณีย์<p style="color: red; padding: 0 5px; margin-bottom: 0px;">*</p></label>
+                    <input type="text" class="form-control" id="compaddrEng" aria-describedby="compaddrEng" placeholder="" />
+            
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="compaddrEng" class="d-flex">เบอร์โทรศัพท์ติดต่อ<p style="color: red; padding: 0 5px; margin-bottom: 0px;">*</p></label>
+                    <input type="text" class="form-control" id="compaddrEng" aria-describedby="compaddrEng" placeholder="" />
+            
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="compaddrEng" class="d-flex">เบอร์ FAX</label>
+                    <input type="text" class="form-control" id="compaddrEng" aria-describedby="compaddrEng" placeholder="" />
+            
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="compaddrEng" class="d-flex">เลขประจำตัวผู้เสียภาษี<p style="color: red; padding: 0 5px; margin-bottom: 0px;">*</p></label>
+                    <input type="text" class="form-control" id="compaddrEng" aria-describedby="compaddrEng" placeholder="" />
+            
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="compaddrEng" class="d-flex">เลขทะเบียนการค้า<p style="color: red; padding: 0 5px; margin-bottom: 0px;">*</p></label>
+                    <input type="text" class="form-control" id="compaddrEng" aria-describedby="compaddrEng" placeholder="" />
+            
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="compaddrEng" class="d-flex">สถานการใช้งาน</label>
+                    <input type="text" class="form-control" id="compaddrEng" aria-describedby="compaddrEng" placeholder="" />
+            
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="compaddrEng" class="d-flex">ตำแหน่งที่ตั้งร้านค้า</label>
+                    <input type="text" class="form-control" id="compaddrEng" aria-describedby="compaddrEng" placeholder="" />
+            
+                  </div>
+            </div>
+            
+        </div>
+      </app-card>
+    </div>
+</div>
+  

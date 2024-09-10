@@ -1,8 +1,21 @@
 <div class="card" [ngClass]="cardClass" [@cardRemove]="cardRemove" #toAnimate>
   @if (!hidHeader) {
     <div class="card-header" [ngClass]="headerClass">
-      @if (!customHeader) {
-        <h5>{{ cardTitle }}</h5>
+      @if (!customHeader && !headerButton) {
+        <h5 [ngClass]="cardTitleStyle">{{ cardTitle }}</h5>
+      }
+      @if (headerButton){
+        <div class="d-flex" style="align-items: baseline;">
+          <div [ngClass]="cardTitleStyle" class="p-2">{{ cardTitle }}</div>
+          <div class="p-2"><button type="button" class="btn-labeled btn save m-0 rounded-3">
+            <span class="btn-label"><i class="bi bi-bag-check-fill"></i></span>
+            บันทึก
+          </button></div>
+          <div class="p-2"><button type="button" class="btn-labeled btn previous m-0 rounded-3">
+            <span class="btn-label"><i class="bi bi-arrow-counterclockwise"></i></span>
+            ย้อนกลับ
+          </button></div>
+        </div>
       }
       @if (!customDate) {
         <span class="d-block">{{ CardDate }}</span>

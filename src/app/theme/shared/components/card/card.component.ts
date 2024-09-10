@@ -1,6 +1,6 @@
 // Angular Import
 import { CommonModule } from '@angular/common';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, input, Input, OnInit } from '@angular/core';
 import { animate, AUTO_STYLE, state, style, transition, trigger } from '@angular/animations';
 
 // bootstrap import
@@ -62,6 +62,8 @@ export class CardComponent implements OnInit {
   @Input() CardDate!: string;
   @Input() isCardFooter: boolean;
   @Input() footerClass!: string;
+  @Input() cardTitleStyle!: string;
+  @Input() headerButton!: boolean;
 
   animation!: string;
   fullIcon: string;
@@ -77,8 +79,10 @@ export class CardComponent implements OnInit {
     this.customHeader = false;
     this.customDate = false;
     this.options = true;
+    this.headerButton = false;
     this.hidHeader = false;
     this.cardTitle = 'Card Title';
+    this.cardTitleStyle ="";
     this.fullIcon = 'icon-maximize';
     this.isAnimating = false;
     this.isCardFooter = false;
@@ -93,6 +97,8 @@ export class CardComponent implements OnInit {
 
   // life cycle event
   ngOnInit() {
+
+
     if (!this.options || this.hidHeader || this.customHeader) {
       this.collapsedCard = 'false';
     }
