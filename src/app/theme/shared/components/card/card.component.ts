@@ -64,6 +64,8 @@ export class CardComponent implements OnInit {
   @Input() footerClass!: string;
   @Input() cardTitleStyle!: string;
   @Input() headerButton!: boolean;
+  @Input() headerIcon!: boolean;
+  @Input() headerUnderLine!: boolean;
 
   animation!: string;
   fullIcon: string;

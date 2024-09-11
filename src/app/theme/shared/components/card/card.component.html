@@ -1,7 +1,7 @@
 <div class="card" [ngClass]="cardClass" [@cardRemove]="cardRemove" #toAnimate>
   @if (!hidHeader) {
     <div class="card-header" [ngClass]="headerClass">
-      @if (!customHeader && !headerButton) {
+      @if (!customHeader && !headerButton && !headerIcon && !headerUnderLine) {
         <h5 [ngClass]="cardTitleStyle">{{ cardTitle }}</h5>
       }
       @if (headerButton){
@@ -16,6 +16,16 @@
             ย้อนกลับ
           </button></div>
         </div>
+      }
+      @if (headerIcon && headerUnderLine){
+        <div class="d-flex" style="align-items: baseline;">
+          <button class="bi bi-arrow-down-short" style="border-radius: 100%; font-size: 1.25rem; color:white; cursor: auto; background: #14A274;border: white;"></button>
+          <div [ngClass]="cardTitleStyle" class="p-2">{{ cardTitle }}</div>
+        </div>
+        <div class="d-flex" style="align-items: baseline;">
+          <hr style="width: 100%;background: #14A274;margin-top: 5px;"/>
+        </div>
+
       }
       @if (!customDate) {
         <span class="d-block">{{ CardDate }}</span>
@@ -71,7 +81,7 @@
   }
 
   <div [@collapsedCard]="collapsedCard">
-    <div class="card-body" [ngClass]="blockClass">
+    <div class="card-body pt-0" [ngClass]="blockClass">
       <ng-content></ng-content>
     </div>
   </div>

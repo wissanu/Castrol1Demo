@@ -14,6 +14,7 @@
 
 .header-title-larger {
   font-size: larger !important;
+  font-weight: 700 !important;
 }
 
 .header-with-button {
@@ -179,13 +180,18 @@ button.previous,
   position: relative;
   left: -16px;
   display: inline-block;
-  padding-top: 0.4rem;
+  padding-top: 0.2rem;
   padding-right: 0.8rem;
-  padding-bottom: 0.4rem;
+  padding-bottom: 0.2rem;
   padding-left: 0.8rem;
   background: rgba(0, 0, 0, 0.15);
   border-radius: 3px 0 0 3px;
 }
+
+.icon-size {
+  font-size: 1.25rem;
+}
+
 .btn-label.btn-label-right {
   right: -15px;
   left: auto;
