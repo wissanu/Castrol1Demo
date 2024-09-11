@@ -176,6 +176,39 @@ button.previous,
   color:black;
 }
 
+.table-icon-edit::before {
+  content: "\f4c9";
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  padding: 5px 8px;
+}
+
+.table-icon-edit {
+  border-radius: 50%;
+  font-size: 16px;
+  color: white;
+  background: #4099FF;
+  border: none;
+  padding: 0;
+}
+
+.table-icon-del::before{
+  content: "\f5de";
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  padding: 5px 8px;
+}
+
+.table-icon-del {
+  border-radius: 50%;
+  font-size: 16px;
+  color: white;
+  background: #f04124;
+  border-color: #212529;
+  border: none;
+  padding: 0;
+}
+
 .btn-label.btn-label-right {
   right: -15px;
   left: auto;
